@@ -1,0 +1,212 @@
+@import url('../../App.css');
+
+.ingredients-section {
+	width: 100%;
+	background-color: #ffff;
+}
+
+.ingredients {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.ingredients-title-area {
+	margin: 4rem 0 5rem 0;
+}
+
+.ingredients-circle {
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	background-color: #d9d9d9;
+	border-radius: 50%;
+}
+
+.ingredients-boxes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8rem;
+}
+
+.ingredients-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 2rem;
+	max-width: 38rem;
+	gap: 1rem;
+}
+
+.ingredients-box-title {
+	margin-top: 1rem;
+	font-size: 2.8rem;
+	font-weight: 500;
+}
+
+.ingredients-title {
+	color: #111111;
+	text-align: center;
+	font-size: 3rem;
+	background: linear-gradient(
+		90.112deg,
+		#111111 0%,
+		#b1b1b1 54%,
+		#696969 80%,
+		#b1b1b1 100%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-weight: 500;
+}
+.ingredients-title::after {
+	content: '';
+	display: block;
+	width: 10rem;
+	height: 1px;
+	background: #111111;
+	margin: 1rem auto;
+}
+
+.ingredients-subtitle {
+	font-weight: 500;
+	text-align: center;
+	font-size: 2.5rem;
+	padding: 2rem 1rem;
+	margin-bottom: 5rem;
+	color: #111111;
+}
+
+.ingredients-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.ingredients-amount {
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}
+
+.ingredients-box-text {
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.ingredients-underline {
+	width: 25rem;
+	height: 1px;
+	background-color: #111111;
+	display: block;
+	margin-top: 1rem;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.ingredients-box:hover .ingredients-underline {
+	opacity: 1;
+}
+
+.ingredients-box-pic {
+	position: relative;
+	width: fit-content;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ingredients-button {
+	gap: 1rem;
+	padding: 1rem 4rem;
+	font-weight: 700;
+	color: var(--bgc-first);
+	background-color: #ad4844;
+	letter-spacing: 0.5px;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+	letter-spacing: 1px;
+}
+
+.ingredients-vector1,
+.ingredients-vector2 {
+	position: absolute;
+}
+
+.ingredients-vector1 {
+	left: -25px;
+	width: 8rem;
+	top: 32%;
+}
+
+.ingredients-vector2 {
+	width: 8rem;
+	top: 24%;
+	right: -15px;
+}
+
+.ingredients-pic {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 20rem;
+}
+
+@media screen and (min-width: 576px) {
+	.ingredients-pic {
+		width: 30rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.ingredients-title {
+		font-size: 4.8rem;
+	}
+
+	.ingredients-area {
+		flex-direction: row;
+		padding: 0 3rem;
+		align-items: center;
+	}
+	.ingredients-box {
+		height: 45rem;
+		width: 100%;
+	}
+
+	.ingredients-circle {
+		width: 5rem;
+		height: 5rem;
+	}
+
+	
+
+	.ingredients-amount {
+		font-size: 2rem;
+	}
+
+	.ingredients-vector1 {
+		left: 2px;
+		width: 15rem;
+		top: 36%;
+	}
+
+	.ingredients-vector2 {
+		top: 26%;
+		width: 16rem;
+		right: -26px;
+	}
+
+	.ingredients-box-text {
+		font-size: 2rem;
+	}
+}
+
+
+@media screen and (min-width: 1280px) {
+	.ingredients-pic {
+		width: 50rem;
+	}
+}

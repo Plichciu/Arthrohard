@@ -1,0 +1,386 @@
+@import url('../../App.css');
+
+.advantages-section {
+	width: 100%;
+}
+
+.advantages {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.advantages-box-title {
+	position: relative;
+	z-index: 5;
+	margin: 4rem 0 3rem 0;
+}
+
+.advantages-title {
+	font-size: 3rem;
+	position: relative;
+	margin-top: 12rem;
+	margin-bottom: 5rem;
+	text-align: center;
+	background: linear-gradient(
+		90.112deg,
+		#111111 0%,
+		#b1b1b1 54%,
+		#696969 80%,
+		#b1b1b1 100%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-weight: 500;;
+}
+
+.advantages-title::after {
+	content: '';
+	display: block;
+	width: 10rem;
+	height: 1px;
+	background: #111111;
+	margin: 1rem auto;
+}
+
+.advantages-box-title h4 {
+	display: block;
+	position: relative;
+	height: fit-content;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.advantages-box {
+	position: relative;
+}
+
+.advantages-box-title h4::after {
+	content: '';
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 10rem;
+	height: 2px;
+	background: linear-gradient(
+		90.112deg,
+		#111111 0%,
+		#b1b1b1 54%,
+		#696969 80%,
+		#b1b1b1 100%
+	);
+}
+
+.advantages-box-title {
+	text-align: center;
+}
+
+.advantages-text {
+	text-align: center;
+	padding: 1rem 3rem;
+}
+
+.advantages-boxes {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.advantages-box {
+	width: 90%;
+	max-width: 40rem;
+	margin-bottom: 5rem;
+}
+
+.advantages-box-title h4::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 10rem;
+	height: 1px;
+	background-color: #111111;
+	margin: 0 auto;
+}
+
+.advantages-box-number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.advantages-numbers {
+	width: fit-content;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 1rem 3rem;
+}
+
+.advantages-box-number {
+	display: flex;
+	justify-content: left;
+	gap: 3rem;
+}
+
+.advantages-number {
+	color: #000000;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3.2rem;
+	height: 3.2rem;
+	border-radius: 50%;
+	box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.advantages-pic-box,
+.advantages-pics-box {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.advantages-pic-box,
+.advantages-pics-box {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	margin: 3rem auto;
+}
+
+.advantages-pics-box img {
+	width: 100%;
+	margin: 0 1rem;
+	z-index: 5;
+}
+
+.advantages-pic-box img {
+	width: 100%;
+	z-index: 5;
+}
+
+.advantages-pic-box .advantages-pic {
+	display: block;
+	width: 22rem;
+	height: 15rem;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.advantages-pics-box .advantages-pic-dog {
+	object-fit: contain;
+	width: 11rem;
+	height: 15rem;
+}
+
+.advantages-vector {
+	position: absolute;
+	display: none;
+}
+
+.advantages-pic-box .vectorA1 {
+	display: block;
+	width: 4rem;
+	top: 35%;
+	left: -32px;
+}
+
+.advantages-pic-box .vectorA2 {
+	display: block;
+	width: 3rem;
+	top: 25%;
+	right: -25px;
+}
+
+.advantages-pics-box .vectorA3 {
+	display: block;
+	width: 4rem;
+	top: 45%;
+	left: -12px;
+}
+
+.advantages-pics-box .vectorA4 {
+	display: block;
+	width: 3rem;
+	top: 50%;
+	right: 0;
+}
+
+.advantages-pic-box .vectorA5 {
+	display: block;
+	width: 5rem;
+	top: 25%;
+	left: -32px;
+}
+
+.advantages-pic-box .vectorA6 {
+	display: block;
+	width: 4rem;
+	top: 35%;
+	right: -12px;
+}
+
+.advantages-box::before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70%;
+	height: 1px;
+	background-color: #111111;
+	margin: 0 auto;
+	opacity: 0;
+	transition: opacity 0.3s linear;
+}
+
+.advantages-box:hover::before {
+	opacity: 1;
+}
+
+@media screen and (min-width: 362px) {
+	.advantages-pic-box .advantages-pic {
+		width: 28rem;
+		height: 25rem;
+	}
+	.advantages-pics-box .advantages-pic-dog {
+		width: 14rem;
+		height: 25rem;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.advantages-pic-box .advantages-pic {
+		width: 30rem;
+		height: 25rem;
+	}
+	.advantages-pics-box .advantages-pic {
+		width: 15rem;
+		height: 25rem;
+	}
+
+	.advantages-pic-box .vectorA1 {
+		width: 7rem;
+		left: -52px;
+	}
+
+	.advantages-pic-box .vectorA2 {
+		top: 20%;
+		width: 6rem;
+		right: -55px;
+	}
+
+	.advantages-pics-box .vectorA3 {
+		width: 7rem;
+		left: -42px;
+	}
+
+	.advantages-pics-box .vectorA4 {
+		width: 6rem;
+		right: -15px;
+	}
+	.advantages-pic-box .vectorA5 {
+		width: 7rem;
+		left: -52px;
+	}
+
+	.advantages-pic-box .vectorA6 {
+		width: 6rem;
+		right: -20px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.advantages-title {
+		margin-top: 5rem;
+		font-size: 4.8rem;
+	}
+
+	.advantages-box-title {
+		height: 10rem;
+	}
+
+	.advantages-box-title h4 {
+		font-weight: 500;
+		font-size: 3.1rem;
+	}
+	.advantages-numbers,
+	.advantages-text {
+		height: 25rem;
+	}
+
+	.advantages-numbers p {
+		font-size: 2rem;
+	}
+
+	.advantages-text {
+		font-size: 2rem;
+	}
+	.advantages-pic-box .vectorA1 {
+		top: 40%;
+		width: 6rem;
+		left: -42px;
+	}
+	.advantages-pic-box .vectorA2 {
+		top: 20%;
+		width: 5rem;
+		right: -14px;
+	}
+	.advantages-pics-box .vectorA3 {
+		top: 40%;
+		width: 6rem;
+	}
+	.advantages-pics-box .vectorA4 {
+		right: -12px;
+		width: 5rem;
+	}
+	.advantages-pic-box .vectorA5 {
+		width: 5rem;
+		left: -40px;
+	}
+	.advantages-pic-box .vectorA6 {
+		width: 5rem;
+		right: -16px;
+	}
+
+	.advantages-box {
+		width: 32%;
+	}
+
+	.advantages-boxes {
+		margin: 0 auto;
+		width: 90%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.advantages-pic-box .advantages-pic {
+		width: 26rem;
+		height: 20rem;
+	}
+
+	.advantages-pics-box .advantages-pic {
+		width: 12rem;
+		height: 20rem;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.advantages-pic-box .advantages-pic {
+		width: 34rem;
+		height: 28rem;
+	}
+
+	.advantages-pics-box .advantages-pic {
+		width: 17rem;
+		height: 28rem;
+	}
+}

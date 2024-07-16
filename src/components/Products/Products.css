@@ -1,0 +1,110 @@
+@import url('../../App.css');
+
+.products-section {
+	width: 100%;
+	background-color: var(--bgc-first);;
+	position: relative;
+}
+
+.products {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1440px;
+}
+
+.products-select {
+	padding: 1rem 3rem;
+}
+
+.products-select-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5rem;
+}
+
+.products-select-box label,
+.products-select-box select {
+	border: 1px solid #ad4844;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	font-size: 1.6rem;
+}
+
+.products-select-box select {
+	background-color: #ad4844;
+	color: var(--bgc-first);;
+	padding: 0.4rem 1rem;
+	font-weight: 600;
+}
+
+.products-box {
+	cursor: pointer;
+	background-color: #bebebe;
+	width: 20rem;
+	height: 20rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+}
+
+.popup-container {
+	position: fixed;
+	background-color: #3a3939ad;
+	height: 100%;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.products-area {
+	overflow-x: hidden;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	gap: 2rem;
+	max-width: 1440px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	padding: 1rem;
+}
+
+@media screen and (max-width: 324px) {
+	.products-select-box label,
+	.products-select-box select {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.products-area {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 1024px) {
+	.products-box {
+		width: 22rem;
+		height: 22rem;
+		font-size: 2rem;
+	}
+
+	.products-area {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.products-box {
+		width: 29rem;
+		height: 29rem;
+	}
+
+	.products-area {
+		row-gap: 6rem;
+		column-gap: 2rem;
+	}
+}
